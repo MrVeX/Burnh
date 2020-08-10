@@ -81,66 +81,59 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// /**
-//  * First we will load all of this project's JavaScript dependencies which
-//  * includes Vue and other libraries. It is a great starting point when
-//  * building robust, powerful web applications using Vue and Laravel.
-//  */
-// require('./bootstrap');
-// window.Vue = require('vue');
-// /**
-//  * The following block of code may be used to automatically register your
-//  * Vue components. It will recursively scan this directory for the Vue
-//  * components and automatically register them with their "basename".
-//  *
-//  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
-//  */
-// // const files = require.context('./', true, /\.vue$/i)
-// // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-// /**
-//  * Next, we will create a fresh Vue application instance and attach it to
-//  * the page. Then, you may begin adding components to this application
-//  * or customize the JavaScript scaffolding to fit your unique needs.
-//  */
-// const app = new Vue({
-//     el: '#main',
-// });
-
-/***/ }),
-
-/***/ "./resources/sass/app.scss":
+/***/ "./resources/js/scripts.js":
 /*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
+  !*** ./resources/js/scripts.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'js/assets/particles.json', function () {
+  console.log('callback - particles.js config loaded');
+}); // // Инициализация паралакса от материалайза
+// $(document).ready(function(){
+//     $('.parallax').parallax();
+//   });
+// Автоматический margin для footer'a для эффекта скольжения
+// Небольшая задержка для корректного срабатывания ибо бывает redy documet запускает чуть раньше и высота не корректная
+
+$(document).ready(function () {
+  setTimeout(autoHeight, 300); // 0.7 sec
+}); //сама функция
+
+function autoHeight() {
+  var footer_height = $('.page-footer').height();
+  $('#main').css('margin-bottom', footer_height + 'px');
+} // плавная прокрутка к якорю
+
+
+$(function () {
+  $("a[href^='#']").click(function () {
+    var _href = $(this).attr("href");
+
+    $("html, body").animate({
+      scrollTop: $(_href).offset().top + "px"
+    });
+    return false;
+  });
+});
 
 /***/ }),
 
-/***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/***/ 1:
+/*!***************************************!*\
+  !*** multi ./resources/js/scripts.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! V:\Programs\OpenServer\domains\burnh.loc\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! V:\Programs\OpenServer\domains\burnh.loc\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! V:\Programs\OpenServer\domains\burnh.loc\resources\js\scripts.js */"./resources/js/scripts.js");
 
 
 /***/ })

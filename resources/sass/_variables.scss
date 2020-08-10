@@ -1,8 +1,10 @@
 // Body
 $body-bg: #f8fafc;
 
+
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-core: 'Roboto', sans-serif;
+$font-family-opt:  'Montserrat', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
@@ -17,3 +19,17 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+// My colorsheme
+$white-hex: #f1f1f1;
+$dark-hex: #241E26;
+$aqua-hex: #34BFA6;
+$yellow-hex: #F2A81D;
+$cyan-hex: #24B0BF;
+$dark-blue-hex:#021C26;
+
+@mixin center_absolute {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
