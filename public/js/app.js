@@ -118,6 +118,7 @@
 // const app = new Vue({
 //     el: '#main',
 // });
+M.AutoInit();
 
 /***/ }),
 

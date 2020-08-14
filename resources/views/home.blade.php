@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('titles')Главная Burning Hamsters @endsection
+@section('titles')Burning Hamsters @endsection
 @section('content')
 <div class="preview" id="particles-js">
     <div class="preview-text container">
@@ -40,7 +40,7 @@
     </svg>
 </div>
 <div id="content" class="container">
-    <h1 class="heading">Burning Hamsters — Фриланс и не только</h1>
+    <h1 class="heading">Фриланс и не только</h1>
     <div class="row">
 
     </div>

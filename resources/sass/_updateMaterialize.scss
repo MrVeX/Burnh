@@ -16,7 +16,8 @@
 // h6{
 //     font-size: $h6-size;
 // }
-header{
+
+header.invisible{
     position: absolute;
     top: 0;
     nav{
@@ -24,6 +25,16 @@ header{
         box-shadow: none;
         z-index: 2;
         position: relative;
+    }
+}
+header{
+    nav{
+        background: $dark-hex;
+    }
+}
+footer{
+    .btn-flat{
+        color:inherit;
     }
 }
 footer, .page-footer, .footer-copyright{

@@ -8,15 +8,15 @@
     var code2 = new Typed('.element2', {
         stringsElement :'#code-2',
         typeSpeed: 40,
-        startDelay: 1200,
+        startDelay: 1500,
         showCursor: false});
     var code3 = new Typed('.element3', {
         stringsElement :'#code-3',
         typeSpeed: 40,
-        startDelay: 2000,
+        startDelay: 2500,
         showCursor: false});
     var code4 = new Typed('.element4', {
         stringsElement :'#code-4',
         typeSpeed: 40,
-        startDelay: 3000});
+        startDelay: 3500});
 </script>
