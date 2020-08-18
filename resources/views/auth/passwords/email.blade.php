@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row valign-wrapper" style="height: 95vh">
+    <div class="row" style="height: 95vh">
         <div class="col m3"></div>
         <div class="card col m6">
             <h3 class="card-title center-align">Сбросить пароль</h3>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="card-action">
-                    <button type="submit" class="btn waves-effect waves-light">Отправить ссылку сброса пароля
+                    <button type="submit" class="btn waves-effect waves-light">Отправить ссылку для сброса пароля
                         <i class="material-icons right">send</i></button>
                 </div>
             </form>

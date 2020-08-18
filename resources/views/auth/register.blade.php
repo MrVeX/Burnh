@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row valign-wrapper" style="height: 95vh">
+    <div class="row" style="height: 95vh">
         <div class="col m3"></div>
         <div class="card col m6">
             <h3 class="card-title center-align">Регистрация</h3>

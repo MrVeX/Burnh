@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row valign-wrapper" style="height: 95vh">
+    <div class="row" style="height: 95vh">
         <div class="col m3">
             @if (session('success'))
             <div class="teal accent-3" role="alert">
