@@ -37,7 +37,7 @@
                                         <input id="password" type="password"
                                             class="validate @error('password') is-invalid @enderror" name="password"
                                             required autocomplete="new-password">
-                                        <label for="password">Пароль</label>
+                                        <label for="password">Новый пароль</label>
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -52,7 +52,7 @@
                                     <div class="input-field">
                                         <input id="password-confirm" type="password" class="validate"
                                             name="password_confirmation" required autocomplete="new-password">
-                                        <label for="password-confirm">Подтвердите пароль</label>
+                                        <label for="password-confirm">Подтвердите новый пароль</label>
                                     </div>
                                 </div>
                             </div>
