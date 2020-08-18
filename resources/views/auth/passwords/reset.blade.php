@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('titles') Сброс пароля @endsection
 @section('content')
     <div class="container">
         <div class="row" style="height: 95vh">

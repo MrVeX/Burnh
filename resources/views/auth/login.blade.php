@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('titles') Авторизация @endsection
 @section('content')
 <div class="container">
     <div class="row" style="height: 95vh">
