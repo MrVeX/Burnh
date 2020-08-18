@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/logout', 'LogoutController@logout')->name('logout');

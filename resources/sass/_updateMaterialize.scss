@@ -48,3 +48,9 @@ footer, .page-footer, .footer-copyright{
 .row{
     @extend .valign-wrapper;
 }
+.btn, .btn-small, .btn-large{
+    background-color: $cyan-hex;
+}
+.btn:hover, .btn-small:hover, .btn-large:hover{
+    background-color: $yellow-hex;
+}

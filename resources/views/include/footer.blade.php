@@ -8,7 +8,8 @@
                         <span>©{{date('Y')}} Developed by VeXter</span>
                         @if (Route::has('login'))
                         @auth
-                            <a class="waves-effect waves-light btn-flat" href="{{ route('home') }}"><i class="fal fa-user"></i></a>
+                            <a class="waves-effect waves-light btn-flat" href="{{ route('home') }}"><i class="fal fa-user-alien"></i></a>
+                            <a class="waves-effect waves-light btn-flat" href="{{ route('logout') }}"><i class="fal fa-sign-out-alt"></i></a>
                         @else
                             <a class="waves-effect waves-light btn-flat" href="{{ route('login') }}"><i class="fal fa-user"></i></a>
                             {{-- @if (Route::has('register'))

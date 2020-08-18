@@ -9198,6 +9198,18 @@ footer,
   box-shadow: 0 16px 24px 2px rgba(255, 255, 255, 0.14), 0 6px 30px 5px rgba(255, 255, 255, 0.12), 0 8px 10px -7px rgba(255, 255, 255, 0.2);
 }
 
+.btn,
+.btn-small,
+.btn-large {
+  background-color: #24B0BF;
+}
+
+.btn:hover,
+.btn-small:hover,
+.btn-large:hover {
+  background-color: #F2A81D;
+}
+
 /*!
  * Font Awesome Pro 5.14.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
