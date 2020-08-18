@@ -5,7 +5,6 @@
         <div class="row" style="height: 95vh">
             <div class="col m3"></div>
             <div class="card col m6">
-                <div class="card">
                     <h3 class="card-title center-align">Сброс пароля</h3>
 
                     <form method="POST" action="{{ route('password.update') }}">
@@ -65,7 +64,6 @@
                             </button>
                         </div>
                     </form>
-                </div>
             </div>
             <div class="col m3"></div>
         </div>
