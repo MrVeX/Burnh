@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Auth::routes([
-    'verify' => true,
+    'verify' => false,
     'register'=> true,
     ]);
 
@@ -24,5 +24,5 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user', 'UserController@index')->name('user');
 Route::get('/logout', 'LogoutController@logout')->name('logout');

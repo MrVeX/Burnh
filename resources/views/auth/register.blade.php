@@ -16,7 +16,7 @@
                             <div class="input-field">
                                 <input id="name" type="text" class="validate @error('name') is-invalid @enderror"
                                     name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                                <label for="name">Имя</label>
+                                <label for="name">Никнейм</label>
                                 @error('name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

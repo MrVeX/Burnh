@@ -1,5 +1,5 @@
 @section('header')
-  @if (Request::route()->getName() == 'welcome' || Request::route()->getName() == 'home' )
+  @if (Request::route()->getName() == 'welcome')
   <header class="invisible">
   @else
   <header>

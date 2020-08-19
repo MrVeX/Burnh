@@ -10,13 +10,13 @@
                                 <ul class="footer-links">
                                     @if (Route::has('login'))
                                         @auth
-                                            <li><a class="waves-effect waves-light btn-flat" href="{{ route('home') }}"><i
-                                                        class="fal fa-alien"></i></a></li>
-                                            <li><a class="waves-effect waves-light btn-flat" href="{{ route('logout') }}"><i
-                                                        class="fal fa-sign-out-alt"></i></a></li>
+                                            <li><a class="waves-effect waves-light btn-flat" href="{{ route('user') }}">
+                                                <i class="fal fa-alien"></i></a></li>
+                                            <li><a class="waves-effect waves-light btn-flat" href="{{ route('logout') }}">
+                                                <i class="fal fa-sign-out-alt"></i></a></li>
                                         @else
-                                            <li><a class="waves-effect waves-light btn-flat" href="{{ route('login') }}"><i
-                                                        class="fal fa-user"></i></a></li>
+                                            <li><a class="waves-effect waves-light btn-flat" href="{{ route('login') }}">
+                                                <i class="fal fa-user"></i></a></li>
                                         @endauth
                                     @endif
                                 </ul>
@@ -32,7 +32,8 @@
                                             class="fab fa-whatsapp"></i></a></li>
                                 <li><a class="waves-effect waves-light btn-flat" href="https://t.me/MrVeXter"><i
                                             class="fab fa-telegram-plane"></i></a></li>
-                                <li><a class="waves-effect waves-light btn-flat" href="{{ route('home') }}">Главная</a></li>
+                                <li><a class="waves-effect waves-light btn-flat" href="{{ route('welcome') }}">
+                                        <i class="fal fa-home"></i></a></li>
                                 {{-- <li><a class="waves-effect waves-light btn-flat"
                                         href="{{ route('portfolio') }}">Портфолио</a></li>
                                 <li><a class="waves-effect waves-light btn-flat" href="{{ route('contact') }}">Контакты</a>
