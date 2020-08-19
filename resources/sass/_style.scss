@@ -1,3 +1,4 @@
+// all site
 body {
   background: $white-hex;
   font-family: $font-family-core;
@@ -7,18 +8,44 @@ body {
 .logo-img {
   height: 64px;
 }
+
+//-- header
 header.invisible{
     .page-header{
         width: 99vw;
         height: auto;
       }
 }
+
+//-- footer
+footer {
+    position: relative;
+    z-index: -1;
+    .row {
+      margin: 0;
+    }
+    .page-footer {
+      z-index: 1;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-links {
+      display: flex;
+    }
+  }
+
+//-- main conent block
 #main {
   background: $white-hex;
   z-index: 5;
   @extend .z-depth-light;
 }
 
+// welcome page
+
+//-- preview block
 .preview {
   background: url(/storage/img/first-screen.jpg);
   background-size: cover;
@@ -59,26 +86,8 @@ header.invisible{
     }
   }
 }
-footer {
-  position: relative;
-  z-index: -1;
-  .row {
-    margin: 0;
-  }
-  .page-footer {
-    z-index: 1;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
 
-  .footer-links {
-    display: flex;
-  }
-}
-
-// Divider
-
+//-- Divider after preview block
 .editorial {
   display: block;
   width: 100%;
@@ -91,6 +100,7 @@ footer {
   left: 0px;
   float: left;
 
+//-- Divider color
   .parallax1 {
     use {
       fill: $cyan-hex;
@@ -113,6 +123,7 @@ footer {
   }
 }
 
+//-- Divider anim
 .parallax1 > use {
   animation: move-forever1 10s linear infinite;
   &:nth-child(1) {
@@ -168,4 +179,10 @@ footer {
   100% {
     transform: translate(85px, 0%);
   }
+}
+
+// User page
+.avatar{
+    height: $avatar-size;
+    width:  $avatar-size;
 }

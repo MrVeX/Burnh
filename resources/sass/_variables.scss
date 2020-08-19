@@ -28,8 +28,12 @@ $yellow-hex: #F2A81D;
 $cyan-hex: #24B0BF;
 $dark-blue-hex:#021C26;
 
+// Var
+$avatar-size: 200px;
+
 @mixin center_absolute {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
