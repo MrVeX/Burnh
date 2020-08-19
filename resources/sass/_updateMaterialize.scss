@@ -32,6 +32,9 @@ header{
         background: $dark-hex;
     }
 }
+nav .brand-logo{
+    display: flex;
+}
 footer{
     .btn-flat{
         color:inherit;
@@ -49,6 +52,9 @@ footer, .page-footer, .footer-copyright{
     .row{
         margin-bottom: 0.66rem;
     }
+}
+li{
+    @extend .valign-wrapper;
 }
 .row{
     @extend .valign-wrapper;

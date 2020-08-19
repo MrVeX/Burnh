@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
-Auth::routes(['verify' => true]);
+
+Auth::routes([
+    'verify' => true,
+    'register'=> true,
+    ]);
+
 
 Route::get('/', function () {
     return view('welcome');

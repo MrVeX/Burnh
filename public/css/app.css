@@ -2657,7 +2657,8 @@ a {
 }
 
 .valign-wrapper,
-.row {
+.row,
+li {
   display: flex;
   align-items: center;
 }
@@ -9182,6 +9183,10 @@ header nav {
   background: #241E26;
 }
 
+nav .brand-logo {
+  display: flex;
+}
+
 footer .btn-flat {
   color: inherit;
 }
@@ -9199,7 +9204,7 @@ footer,
 }
 
 .col .row {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.66rem;
 }
 
 .row {
