@@ -29,7 +29,7 @@ header.invisible{
 }
 header{
     nav{
-        background: $dark-hex;
+        background: $bh-dark;
     }
 }
 nav .brand-logo{
@@ -42,7 +42,7 @@ footer{
 }
 footer, .page-footer, .footer-copyright{
     // @extend  .indigo, .darken-4;
-    background: $dark-blue-hex;
+    background: $bh-dark-blue;
     margin: 0;
 }
 .z-depth-light{
@@ -57,12 +57,20 @@ li{
     @extend .valign-wrapper;
 }
 .row{
-    @extend .valign-wrapper;
     width: 100%;
 }
+footer{
+    .row{
+        @extend .valign-wrapper;
+    }
+}
 .btn, .btn-small, .btn-large{
-    background-color: $cyan-hex;
+    background-color: $bh-cyan;
 }
 .btn:hover, .btn-small:hover, .btn-large:hover{
-    background-color: $yellow-hex;
+    background-color: $bh-yellow;
+}
+
+.collection .collection-item.active{
+    background-color:$bh-cyan;
 }

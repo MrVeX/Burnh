@@ -21,14 +21,19 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 // My colorsheme
-$white-hex: #f1f1f1;
-$dark-hex: #241E26;
-$aqua-hex: #34BFA6;
-$yellow-hex: #F2A81D;
-$cyan-hex: #24B0BF;
-$dark-blue-hex:#021C26;
+$bh-white:      #f1f1f1;        .bh-whit{color: $bh-white;}
+$bh-light-gray: #e0e0e0;        .bh-light-gray{color: $bh-light-gray;}
+$bh-dark:       #241E26;        .bh-dark{color: $bh-dark;}
+$bh-aqua:       #34BFA6;        .bh-aqua{color: $bh-aqua;}
+$bh-yellow:     #F2A81D;        .bh-yellow{color: $bh-yellow;}
+$bh-orange:     #F2790F;        .bh-orange{color: $bh-orange;}
+$bh-cyan:       #24B0BF;        .bh-cyan{color: $bh-cyan;}
+$bh-dark-blue:  #021C26;        .bh-dark-blue{color: $bh-dark-blue;}
+
 
 // Var
+$light-border:solid 1px $bh-light-gray;
+
 $avatar-size: 200px;
 
 @mixin center_absolute {

@@ -1,5 +1,37 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto);@import url(https://fonts.googleapis.com/css2?family=Montserrat);@charset "UTF-8";
 
+.bh-whit {
+  color: #f1f1f1;
+}
+
+.bh-light-gray {
+  color: #e0e0e0;
+}
+
+.bh-dark {
+  color: #241E26;
+}
+
+.bh-aqua {
+  color: #34BFA6;
+}
+
+.bh-yellow {
+  color: #F2A81D;
+}
+
+.bh-orange {
+  color: #F2790F;
+}
+
+.bh-cyan {
+  color: #24B0BF;
+}
+
+.bh-dark-blue {
+  color: #021C26;
+}
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2657,7 +2689,7 @@ a {
 }
 
 .valign-wrapper,
-.row,
+footer .row,
 li {
   display: flex;
   align-items: center;
@@ -9221,6 +9253,10 @@ footer,
 .btn-small:hover,
 .btn-large:hover {
   background-color: #F2A81D;
+}
+
+.collection .collection-item.active {
+  background-color: #24B0BF;
 }
 
 /*!
@@ -26228,6 +26264,10 @@ header.invisible .page-header {
   height: auto;
 }
 
+header li a.active {
+  color: #F2A81D;
+}
+
 footer {
   position: relative;
   z-index: -1;
@@ -26246,6 +26286,10 @@ footer .page-footer {
 
 footer .footer-links {
   display: flex;
+}
+
+footer a.active {
+  color: #F2A81D;
 }
 
 #main {
@@ -26456,5 +26500,14 @@ footer .footer-links {
 .avatar {
   height: 200px;
   width: 200px;
+}
+
+.user.section .col.m3 {
+  border-right: solid 1px #e0e0e0;
+}
+
+.nickname {
+  color: #F2790F;
+  font-size: 3rem;
 }
 

@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('avatar')->nullable();
             $table->string('full_name')->nullable();
             $table->text('about')->nullable();
-            $table->date('brith')->nullable();
+            $table->date('birth')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -13,5 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/scripts.js', 'public/js')
-    .js('resources/js/particles.min.js', 'public/js')
+    .js('resources/js/lib/particles.min.js', 'public/js')
+    .js('resources/js/lib/jquery.pin.min.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');

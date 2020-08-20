@@ -2,7 +2,7 @@
 @section('titles') Авторизация @endsection
 @section('content')
     <div class="container">
-        <div class="row" style="height: 95vh">
+        <div class="row section">
             <div class="col m3">
                 @if (session('success'))
                     <div class="teal accent-3" role="alert">

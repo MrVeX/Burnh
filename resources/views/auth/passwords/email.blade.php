@@ -2,7 +2,7 @@
 @section('titles') Сброс пароля @endsection
 @section('content')
 <div class="container">
-    <div class="row" style="height: 95vh">
+    <div class="row section">
         <div class="col m3"></div>
         <div class="card col m6">
             <h3 class="card-title center-align">Сбросить пароль</h3>

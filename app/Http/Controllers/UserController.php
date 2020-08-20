@@ -23,6 +23,6 @@ class UserController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index( Request $req){
-        return view('user', ['data' => User::find(Auth::id())]);
+        return view('user', ['user' => User::find(Auth::id())]);
     }
 }

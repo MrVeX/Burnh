@@ -1,8 +1,8 @@
 // all site
 body {
-  background: $white-hex;
+  background: $bh-white;
   font-family: $font-family-core;
-  color: $dark-hex;
+  color: $bh-dark;
   position: relative;
 }
 .logo-img {
@@ -15,6 +15,11 @@ header.invisible{
         width: 99vw;
         height: auto;
       }
+}
+header{
+    li a.active{
+        color:$bh-yellow;
+    }
 }
 
 //-- footer
@@ -34,11 +39,14 @@ footer {
     .footer-links {
       display: flex;
     }
+    a.active{
+        color:$bh-yellow;
+    }
   }
 
 //-- main conent block
 #main {
-  background: $white-hex;
+  background: $bh-white;
   z-index: 5;
   @extend .z-depth-light;
 }
@@ -76,13 +84,13 @@ footer {
       font-size: 3rem;
     }
     .class {
-      color: $aqua-hex;
+      color: $bh-aqua;
     }
     .funct {
-      color: $yellow-hex;
+      color: $bh-yellow;
     }
     .var {
-      color: $cyan-hex;
+      color: $bh-cyan;
     }
   }
 }
@@ -103,22 +111,22 @@ footer {
 //-- Divider color
   .parallax1 {
     use {
-      fill: $cyan-hex;
+      fill: $bh-cyan;
     }
   }
   .parallax2 {
     use {
-      fill: $yellow-hex;
+      fill: $bh-yellow;
     }
   }
   .parallax3 {
     use {
-      fill: $aqua-hex;
+      fill: $bh-aqua;
     }
   }
   .parallax4 {
     use {
-      fill: $white-hex;
+      fill: $bh-white;
     }
   }
 }
@@ -185,4 +193,13 @@ footer {
 .avatar{
     height: $avatar-size;
     width:  $avatar-size;
+}
+.user.section{
+    .col.m3{
+        border-right:$light-border;
+    }
+}
+.nickname{
+    color:$bh-orange;
+    font-size: 3rem;
 }
