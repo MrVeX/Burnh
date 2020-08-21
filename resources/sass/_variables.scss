@@ -29,12 +29,13 @@ $bh-yellow:     #F2A81D;        .bh-yellow{color: $bh-yellow;}
 $bh-orange:     #F2790F;        .bh-orange{color: $bh-orange;}
 $bh-cyan:       #24B0BF;        .bh-cyan{color: $bh-cyan;}
 $bh-dark-blue:  #021C26;        .bh-dark-blue{color: $bh-dark-blue;}
+$bh-red:        #D94E41;        .bh-red{color:$bh-red;}
 
 
 // Var
 $light-border:solid 1px $bh-light-gray;
-
-$avatar-size: 200px;
+$border-radius: 0.575rem;
+$avatar-size: 15rem;
 
 @mixin center_absolute {
     position: absolute;

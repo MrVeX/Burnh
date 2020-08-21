@@ -16,6 +16,11 @@
 // h6{
 //     font-size: $h6-size;
 // }
+.btn, .btn-small, .btn-large, .btn-flat, .collection, .avatar, .card{
+    border-radius: $border-radius;
+}
+
+
 
 header.invisible{
     position: absolute;
@@ -74,3 +79,10 @@ footer{
 .collection .collection-item.active{
     background-color:$bh-cyan;
 }
+blockquote.errors{
+    border-left-color:$bh-red;
+}
+blockquote.success{
+    border-left-color:$bh-aqua;
+}
+

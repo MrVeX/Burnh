@@ -1,4 +1,4 @@
-@section('footer')
+
     <footer>
         <div class="page-footer">
             <div class="footer-copyright">
@@ -32,3 +32,4 @@
             </div>
         </div>
     </footer>
+

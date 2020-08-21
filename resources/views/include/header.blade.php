@@ -1,4 +1,4 @@
-@section('header')
+
   @if (Request::route()->getName() == 'welcome')
   <header class="invisible">
   @else
@@ -21,3 +21,4 @@
   </nav>
 </div>
 </header>
+
