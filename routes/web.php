@@ -25,4 +25,5 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/user', 'UserController@index')->name('user');
+Route::post('/user/update', 'UserController@update')->name('updateUserInfo');
 Route::get('/logout', 'LogoutController@logout')->name('logout');
