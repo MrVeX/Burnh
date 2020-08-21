@@ -17,14 +17,9 @@
                                 <div class="col s12">
                                     <div class="input-field">
                                         <input id="password" type="password"
-                                            class="validate @error('password') is-invalid @enderror" name="password"
+                                            class="validate" name="password"
                                             required autocomplete="current-password">
                                         <label for="password">Пароль</label>
-                                        @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +39,9 @@
                     </form>
                 </div>
             </div>
-            <div class="col m3"></div>
+            <div class="col m3">
+                @include('include.errors')
+            </div>
         </div>
     </div>
 @endsection

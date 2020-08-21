@@ -18,16 +18,11 @@
                     <div class="row">
                         <div class="col s12">
                             <div class="input-field">
-                                <input id="email" type="email" class="validate @error('email') is-invalid @enderror"
+                                <input id="email" type="email" class="validate"
                                     name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 <label for="email">Ваш E-Mail</label>
                                 <span class="helper-text" data-error="Неверный формат" data-success="">Введите свой
                                     e-mail адресс</span>
-                                @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
                             </div>
                         </div>
                     </div>

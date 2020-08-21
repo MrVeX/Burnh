@@ -16,17 +16,12 @@
                             <div class="row">
                                 <div class="col s12">
                                     <div class="input-field">
-                                        <input id="email" type="email" class="validate @error('email') is-invalid @enderror"
+                                        <input id="email" type="email" class="validate"
                                             name="email" value="{{ $email ?? old('email') }}" required autocomplete="email"
                                             autofocus>
                                         <label for="email">E-Mail</label>
                                         <span class="helper-text" data-error="Неверный формат" data-success="">Введите свой
                                             e-mail адресс</span>
-                                        @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -35,14 +30,9 @@
                                 <div class="col s12">
                                     <div class="input-field">
                                         <input id="password" type="password"
-                                            class="validate @error('password') is-invalid @enderror" name="password"
+                                            class="validate" name="password"
                                             required autocomplete="new-password">
                                         <label for="password">Новый пароль</label>
-                                        @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
                                     </div>
                                 </div>
                             </div>
