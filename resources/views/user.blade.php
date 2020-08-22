@@ -9,8 +9,9 @@
                     <div class="col s12">
                         <div class="pin section">
                             <div class="center-align">
-                                <img src="{{ Storage::url('public/img/first-screen.jpg') }}" alt=""
-                                    class="avatar align-center z-depth-5">
+                                <div class="avatar-section">
+                                    <img src="{{ asset("$user->avatar") }}" alt="" class="avatar z-depth-5">
+                                </div>
                             </div>
                             <div class="divider"></div>
                             <div class="collection z-depth-2">
@@ -56,13 +57,13 @@
                                                     value="{{ $user->birth }}">
                                                 <label for="birth">Дата рождения</label>
                                             </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <textarea placeholder="О себе" name="about" id="about"
-                                                        class="materialize-textarea"
-                                                        data-length="500">{{ $user->about }}</textarea>
-                                                    <label for="about">О себе</label>
-                                                </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <textarea placeholder="О себе" name="about" id="about"
+                                                    class="materialize-textarea"
+                                                    data-length="500">{{ $user->about }}</textarea>
+                                                <label for="about">О себе</label>
                                             </div>
                                         </div>
                                         <div class="card-action">

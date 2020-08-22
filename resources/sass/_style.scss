@@ -1,3 +1,27 @@
+// framework
+
+//-- background-color
+.bh-white{background-color: $bh-white;}
+.bh-light-gray{background-color: $bh-light-gray;}
+.bh-dark{background-color: $bh-dark;}
+.bh-aqua{background-color: $bh-aqua;}
+.bh-yellow{background-color: $bh-yellow;}
+.bh-orange{background-color: $bh-orange;}
+.bh-cyan{background-color: $bh-cyan;}
+.bh-dark-blue{background-color: $bh-dark-blue;}
+.bh-red{background-color:$bh-red;}
+
+//-- text color
+.bh-white-text{color: $bh-white;}
+.bh-light-gray-text{color: $bh-light-gray;}
+.bh-dark-text{color: $bh-dark;}
+.bh-aqua-text{color: $bh-aqua;}
+.bh-yellow-text{color: $bh-yellow;}
+.bh-orange-text{color: $bh-orange;}
+.bh-cyan-text{color: $bh-cyan;}
+.bh-dark-blue-text{color: $bh-dark-blue;}
+.bh-red-text{color:$bh-red;}
+
 // all site
 body {
   background: $bh-white;

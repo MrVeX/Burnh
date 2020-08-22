@@ -21,16 +21,18 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 // My colorsheme
-$bh-white:      #f1f1f1;        .bh-whit{color: $bh-white;}
-$bh-light-gray: #e0e0e0;        .bh-light-gray{color: $bh-light-gray;}
-$bh-dark:       #241E26;        .bh-dark{color: $bh-dark;}
-$bh-aqua:       #34BFA6;        .bh-aqua{color: $bh-aqua;}
-$bh-yellow:     #F2A81D;        .bh-yellow{color: $bh-yellow;}
-$bh-orange:     #F2790F;        .bh-orange{color: $bh-orange;}
-$bh-cyan:       #24B0BF;        .bh-cyan{color: $bh-cyan;}
-$bh-dark-blue:  #021C26;        .bh-dark-blue{color: $bh-dark-blue;}
-$bh-red:        #D94E41;        .bh-red{color:$bh-red;}
-
+// !!! ОБЯЗАТЕЛЬНО !!!
+// При добавлении нового цвета доавбить его в _style.scss
+// в виде color:$var и backgraund-color:$var
+$bh-white:      #f1f1f1;
+$bh-light-gray: #e0e0e0;
+$bh-dark:       #241E26;
+$bh-aqua:       #34BFA6;
+$bh-yellow:     #F2A81D;
+$bh-orange:     #F2790F;
+$bh-cyan:       #24B0BF;
+$bh-dark-blue:  #021C26;
+$bh-red:        #D94E41;
 
 // Var
 $light-border:solid 1px $bh-light-gray;
