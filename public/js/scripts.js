@@ -94,23 +94,19 @@
 /***/ (function(module, exports) {
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'js/assets/particles.json', function () {
+particlesJS.load('particles-js', './js/assets/particles.json', function () {
   console.log('callback - particles.js config loaded');
 }); // плавная прокрутка к якорю
 
-$(function () {
-  $("a[href^='#']").click(function () {
-    var _href = $(this).attr("href");
-
-    $("html, body").animate({
-      scrollTop: $(_href).offset().top + "px"
-    });
-    return false;
+$(document).ready(function () {
+  $("body").on('click', '[href*="#"]', function (e) {
+    var fixed_offset = 100;
+    $('html,body').stop().animate({
+      scrollTop: $(this.hash).offset().top - fixed_offset
+    }, 1000);
+    e.preventDefault();
   });
-}); // // Инициализация паралакса от материалайза
-// $(document).ready(function(){
-//     $('.parallax').parallax();
-//   });
+}); // Добавляем текущим ссылкам класс active
 
 $(document).ready(function () {
   $.each($('a'), function () {

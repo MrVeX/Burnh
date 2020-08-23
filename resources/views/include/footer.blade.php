@@ -5,7 +5,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s3">
-                            <p>©{{ date('Y') }} Developed by VeXter</p>
+                            <p>Copyright © {{ date('Y') }} MrVeX</p>
                         </div>
                         <div class="col s6"></div>
                         <div class="col s3">
@@ -15,7 +15,7 @@
                                 </li>
                                 @if (Route::has('login'))
                                     @auth
-                                        <li><a class="waves-effect waves-light btn-flat" href="{{ route('user') }}">
+                                        <li><a class="waves-effect waves-light btn-flat" href="{{ route('userPage') }}">
                                                 <i class="fal fa-alien"></i></a></li>
                                         <li><a class="waves-effect waves-light btn-flat" href="{{ route('logout') }}">
                                                 <i class="fal fa-sign-out-alt"></i></a></li>

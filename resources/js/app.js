@@ -31,7 +31,3 @@
 //     el: '#main',
 // });
 M.AutoInit();
-
-$(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-  });

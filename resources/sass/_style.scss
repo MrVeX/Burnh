@@ -217,6 +217,10 @@ footer {
 .avatar{
     height: $avatar-size;
     width:  $avatar-size;
+    margin-bottom: 1rem;
+}
+.avatar-section{
+    padding:1rem 0;
 }
 .user.section{
     .col.m3{

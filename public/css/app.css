@@ -1,41 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto);@import url(https://fonts.googleapis.com/css2?family=Montserrat);@charset "UTF-8";
 
-.bh-whit {
-  color: #f1f1f1;
-}
-
-.bh-light-gray {
-  color: #e0e0e0;
-}
-
-.bh-dark {
-  color: #241E26;
-}
-
-.bh-aqua {
-  color: #34BFA6;
-}
-
-.bh-yellow {
-  color: #F2A81D;
-}
-
-.bh-orange {
-  color: #F2790F;
-}
-
-.bh-cyan {
-  color: #24B0BF;
-}
-
-.bh-dark-blue {
-  color: #021C26;
-}
-
-.bh-red {
-  color: #D94E41;
-}
-
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -9204,12 +9168,8 @@ input[type=range]::-ms-thumb {
   }
 }
 
-.btn,
-.btn-small,
-.btn-large,
-.btn-flat,
 .collection,
-.avatar,
+.square,
 .card {
   border-radius: 0.575rem;
 }
@@ -9279,6 +9239,10 @@ blockquote.errors {
 
 blockquote.success {
   border-left-color: #34BFA6;
+}
+
+.divider {
+  margin-bottom: 0.75rem;
 }
 
 /*!
@@ -26270,6 +26234,78 @@ readers do not read off random characters that represent icons */
   content: "\10F6AD";
 }
 
+.bh-white {
+  background-color: #f1f1f1;
+}
+
+.bh-light-gray {
+  background-color: #e0e0e0;
+}
+
+.bh-dark {
+  background-color: #241E26;
+}
+
+.bh-aqua {
+  background-color: #34BFA6;
+}
+
+.bh-yellow {
+  background-color: #F2A81D;
+}
+
+.bh-orange {
+  background-color: #F2790F;
+}
+
+.bh-cyan {
+  background-color: #24B0BF;
+}
+
+.bh-dark-blue {
+  background-color: #021C26;
+}
+
+.bh-red {
+  background-color: #D94E41;
+}
+
+.bh-white-text {
+  color: #f1f1f1;
+}
+
+.bh-light-gray-text {
+  color: #e0e0e0;
+}
+
+.bh-dark-text {
+  color: #241E26;
+}
+
+.bh-aqua-text {
+  color: #34BFA6;
+}
+
+.bh-yellow-text {
+  color: #F2A81D;
+}
+
+.bh-orange-text {
+  color: #F2790F;
+}
+
+.bh-cyan-text {
+  color: #24B0BF;
+}
+
+.bh-dark-blue-text {
+  color: #021C26;
+}
+
+.bh-red-text {
+  color: #D94E41;
+}
+
 body {
   background: #f1f1f1;
   font-family: "Roboto", sans-serif;
@@ -26522,6 +26558,11 @@ footer a.active {
 .avatar {
   height: 15rem;
   width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.avatar-section {
+  padding: 1rem 0;
 }
 
 .user.section .col.m3 {

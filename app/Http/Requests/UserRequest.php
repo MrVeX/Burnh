@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class UserRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class UserRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        if (Auth::user()->role == 'admin') return true;
     }
 
     /**
@@ -24,10 +25,12 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name' => 'alpha|min:2|max:20',
-            'last_name'  => 'alpha|min:2|max:30',
-            'birth'      => 'date|before:yesterday',
+            'first_name' => 'alpha|min:2|max:20|nullable',
+            'last_name'  => 'alpha|min:2|max:30|nullable',
+            'birth'      => 'date|before:yesterday|nullable',
             'about'      => 'max:500',
+            'avatar'     => 'image|nullable',
+            'avatar_form'=> ['regex:/(circle|square)/'],
         ];
     }
 }

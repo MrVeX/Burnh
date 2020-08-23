@@ -1,5 +1,5 @@
 
-.btn, .btn-small, .btn-large, .btn-flat, .collection, .avatar, .card{
+.collection, .square , .card{
     border-radius: $border-radius;
 }
 
@@ -67,3 +67,6 @@ blockquote.success{
     border-left-color:$bh-aqua;
 }
 
+.divider{
+    margin-bottom: 0.75rem;
+}

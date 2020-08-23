@@ -24,6 +24,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/user', 'UserController@index')->name('user');
-Route::post('/user/update', 'UserController@update')->name('updateUserInfo');
+Route::get('/user', 'UserController@index')->name('userPage');
+Route::get('/user/portfolio', 'UserController@portfolio')->name('userPortfolio');
+Route::post('/user/update', 'UserController@updateInfo')->name('updateUserInfo');
+Route::post('/user/update/avatar', 'UserController@updateAvatar')->name('updateAvatar');
 Route::get('/logout', 'LogoutController@logout')->name('logout');
+Route::get('/user/{name}','UserPublicPageController@index')->name('userPublicPage');
